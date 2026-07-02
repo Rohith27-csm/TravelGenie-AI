@@ -1,3 +1,6 @@
 streamlit
+streamlit-option-menu
 python-dotenv
 google-genai
+requests
+reportlab
