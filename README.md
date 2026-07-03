@@ -1,18 +1,52 @@
-import os
-from dotenv import load_dotenv
-from google import genai
+# 🌍 TravelGenie AI
 
-load_dotenv()
+TravelGenie AI is an AI-powered smart travel planning application that generates personalized travel itineraries based on destination, trip duration, budget, and user interests.
 
-api_key = os.getenv("GEMINI_API_KEY")
+## 🚀 Live Application
 
-print("API Key Loaded:", "Yes" if api_key else "No")
+👉 [Open TravelGenie AI](https://rohith27-csm-travelgenie-ai-app-axvyew.streamlit.app)
 
-client = genai.Client(api_key=api_key)
+## ✨ Features
 
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents="Say hello."
-)
+- 🤖 AI-powered personalized travel planning
+- 📅 Day-wise itinerary generation
+- 💰 Budget-based recommendations
+- 🏨 Hotel suggestions
+- 🍽️ Local food recommendations
+- 📍 Tourist attraction suggestions
+- 🗺️ Google Maps integration
+- 📄 Downloadable travel plans
+- 🎯 Interest-based personalization
 
-print(response.text)
+## 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- Google Gemini 2.5 Flash
+- Google GenAI Python SDK
+- Git
+- GitHub
+- Streamlit Community Cloud
+
+## ⚙️ How It Works
+
+1. Enter a travel destination.
+2. Select the number of travel days.
+3. Enter your budget.
+4. Add interests such as beaches, food, nightlife, or adventure.
+5. Click **Generate Travel Plan**.
+6. Gemini AI generates a personalized itinerary.
+7. View the complete plan, open the destination in Google Maps, or download the itinerary.
+
+## 📂 Project Structure
+
+```text
+TravelGenie-AI/
+├── app.py
+├── tools.py
+├── prompts.py
+├── weather.py
+├── pdf_generator.py
+├── requirements.txt
+├── .gitignore
+└── README.md
